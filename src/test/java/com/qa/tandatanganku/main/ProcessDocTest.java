@@ -11,7 +11,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
 
         delay(5000);
     }
@@ -21,7 +21,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.btnBatal.click();
 
         delay(5000);
@@ -32,7 +32,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
         delay(5000);
 
@@ -44,7 +44,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.labelIya.click();
@@ -56,7 +56,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.labelTidak.click();
@@ -69,7 +69,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPSMS.click();
@@ -81,7 +81,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
@@ -93,7 +93,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
@@ -115,7 +115,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonProsign.click();
@@ -136,7 +136,7 @@ public class ProcessDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip.click();
+        documentObject.linkTooltip2.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();

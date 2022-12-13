@@ -109,6 +109,9 @@ public class DocumentObject {
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div[11]/div[6]/div/div/div[1]/div/div/div/div[2]/div[3]/div/span/a")
     public WebElement linkTooltip;
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div[11]/div[6]/div/div/div[1]/div/div/div/div[4]/div[3]/div/span/a")
+    public WebElement linkTooltip2;
+
     @FindBy(xpath = "//a[contains(@class, 'btn')]")
     public WebElement btnBatal;
 
