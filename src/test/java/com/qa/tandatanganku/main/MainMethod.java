@@ -30,9 +30,9 @@ public class MainMethod {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://app.tandatanganku.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
-        driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
         act = new Actions(driver);
         loginPage = new LoginPage(driver);

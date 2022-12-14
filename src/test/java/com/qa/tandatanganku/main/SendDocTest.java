@@ -12,8 +12,6 @@ public class SendDocTest extends MainMethod {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        loginPage.divGmailComPersonal.click();
-
         WebElement inputFile = driver.findElement(By.xpath("//input[@type='file']"));
         inputFile.sendKeys("C:\\Users\\dignitas\\Downloads\\company_image_20221101070631 (2).pdf");
 
@@ -25,10 +23,8 @@ public class SendDocTest extends MainMethod {
 
     @Test
     public void tryToUploadExcPDF() {
-        loginPage.inputUsername.sendKeys("wahyuhi" + Keys.ENTER);
-        loginPage.inputPassword.sendKeys("Kijang321!" + Keys.ENTER);
-
-        loginPage.divGmailComPersonal.click();
+        loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
+        loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
         WebElement inputFile = driver.findElement(By.xpath("//input[@type='file']"));
         inputFile.sendKeys("C:\\Users\\dignitas\\Documents\\shortcut.txt");
@@ -184,7 +180,7 @@ public class SendDocTest extends MainMethod {
     }
 
     @Test
-    public void pengecekan() throws InterruptedException {
+    public void pengecekan() {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 

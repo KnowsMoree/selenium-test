@@ -7,32 +7,32 @@ import static org.testng.Assert.*;
 
 public class ProcessDocTest extends MainMethod {
     @Test
-    public void enterDocSign() throws InterruptedException {
+    public void a() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
 
         delay(5000);
     }
 
     @Test
-    public void cancelProcess() throws InterruptedException {
+    public void b() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.btnBatal.click();
 
         delay(5000);
     }
 
     @Test
-    public void process() throws InterruptedException {
+    public void c() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
         delay(5000);
 
@@ -40,11 +40,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void agreeProcess() throws InterruptedException {
+    public void d() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.labelIya.click();
@@ -52,11 +52,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void rejectProcess() throws InterruptedException {
+    public void e() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.labelTidak.click();
@@ -65,11 +65,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void sendOTPSMS() throws InterruptedException {
+    public void f() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPSMS.click();
@@ -77,11 +77,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void sendOTPEmail() throws InterruptedException {
+    public void g() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
@@ -89,11 +89,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void falseOTP() throws InterruptedException {
+    public void h() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
@@ -111,11 +111,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void rejectAllProcess() throws InterruptedException {
+    public void i() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonProsign.click();
@@ -132,11 +132,11 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void agreeAllProcess() throws InterruptedException {
+    public void j() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
-        documentObject.linkTooltip2.click();
+        documentObject.linkTooltip.click();
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();

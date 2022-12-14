@@ -157,6 +157,9 @@ public class DocumentObject {
     @FindBy(xpath = "//*[text() = 'Kode verifikasi salah']")
     public WebElement modalKodeVerifikasiSalah;
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div[11]/div[6]/div/div/div[1]/div/div/div/div[6]/div[3]/div/span/a")
+    public WebElement linkTooltip3;
+
     public DocumentObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
