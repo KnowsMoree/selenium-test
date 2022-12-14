@@ -160,6 +160,18 @@ public class DocumentObject {
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div[11]/div[6]/div/div/div[1]/div/div/div/div[6]/div[3]/div/span/a")
     public WebElement linkTooltip3;
 
+    @FindBy(xpath = "//*[@id='bModal']")
+    public WebElement buttonModalGagalOTP;
+
+    @FindBy(xpath = "//*[@id='text_mdl']")
+    public WebElement divTextOTPEmail3x;
+
+    @FindBy(xpath = "//span[contains(@class, 'badge')]")
+    public WebElement spanGagal;
+
+    @FindBy(xpath = "//div[@class='modal-content'][.//*[@id='bModal']]")
+    public WebElement divGagalKodeOtpSudah;
+
     public DocumentObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

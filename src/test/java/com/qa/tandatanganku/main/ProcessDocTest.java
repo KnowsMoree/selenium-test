@@ -7,7 +7,7 @@ import static org.testng.Assert.*;
 
 public class ProcessDocTest extends MainMethod {
     @Test
-    public void a() throws InterruptedException {
+    public void aDocumentDirect() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -17,7 +17,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void b() throws InterruptedException {
+    public void bCancelProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -28,7 +28,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void c() throws InterruptedException {
+    public void cContinueProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -40,7 +40,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void d() throws InterruptedException {
+    public void dAgreementProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -52,7 +52,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void e() throws InterruptedException {
+    public void eDenialProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -65,7 +65,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void f() throws InterruptedException {
+    public void fOTPSMSProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -77,7 +77,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void g() throws InterruptedException {
+    public void gOTPEmailProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -89,7 +89,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void h() throws InterruptedException {
+    public void hOTPFalse() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -111,7 +111,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void i() throws InterruptedException {
+    public void iNotSureProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -132,7 +132,7 @@ public class ProcessDocTest extends MainMethod {
     }
 
     @Test
-    public void j() throws InterruptedException {
+    public void jSureProcess() throws InterruptedException {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
@@ -140,11 +140,17 @@ public class ProcessDocTest extends MainMethod {
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
-        delay(30000);
 
-        documentObject.buttonProsign.click();
-        documentObject.buttonSayaYakin.click();
+        if (!documentObject.divGagalKodeOtpSudah.isDisplayed()) {
+//            delay(30000);
+            System.out.println("false");
+            documentObject.buttonProsign.click();
+            documentObject.buttonSayaYakin.click();
+            delay(7000);
+        } else {
+            documentObject.buttonModalGagalOTP.click();
+            System.out.println("true");
 
-        delay(10000);
+        }
     }
 }
