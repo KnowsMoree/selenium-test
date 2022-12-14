@@ -1,8 +1,8 @@
 {
-  "uuid": "1b0e19c2-99e6-4eea-bf27-8363e8691f18",
+  "uuid": "0dcb9e16-3e82-45e0-8ab3-c8dbfc9374fb",
   "name": "com.qa.tandatanganku.main.MainMethod.setUp",
   "children": [
-    "a70eb644-072f-4e08-9337-3c821192ed06"
+    "81485e02-880f-42a0-969a-8ba5268ad3f8"
   ],
   "description": "",
   "befores": [
@@ -14,11 +14,11 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1670926563823,
-      "stop": 1670926565274
+      "start": 1670991291983,
+      "stop": 1670991296466
     }
   ],
   "afters": [],
-  "start": 1670926563823,
-  "stop": 1670926565274
+  "start": 1670991291981,
+  "stop": 1670991296466
 }

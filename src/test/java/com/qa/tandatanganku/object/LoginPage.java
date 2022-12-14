@@ -30,6 +30,15 @@ public class LoginPage {
     @FindBy(xpath = "/html/body/div/div/div/div/section/form/a[2]/div")
     public WebElement divGmailComPersonal2;
 
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement passFalseAlert;
+
+    @FindBy(xpath = "//*[@id='e_username']")
+    public WebElement errorLoginUsername;
+
+    @FindBy(xpath = "//*[text() = '[Password salah sebanyak 3x. Silakan coba kembali setelah 10 menit.]']")
+    public WebElement alert3TimesFalse;
+
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
