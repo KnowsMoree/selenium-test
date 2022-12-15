@@ -166,11 +166,11 @@ public class DocumentObject {
     @FindBy(xpath = "//*[@id='text_mdl']")
     public WebElement divTextOTPEmail3x;
 
-    @FindBy(xpath = "//span[contains(@class, 'badge')]")
-    public WebElement spanGagal;
-
     @FindBy(xpath = "//div[@class='modal-content'][.//*[@id='bModal']]")
     public WebElement divGagalKodeOtpSudah;
+
+    @FindBy(xpath = "//span[contains(@class, 'badge')]")
+    public WebElement spanGagalOTP;
 
     public DocumentObject(WebDriver driver) {
         PageFactory.initElements(driver, this);

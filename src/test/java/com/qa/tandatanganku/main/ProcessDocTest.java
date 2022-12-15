@@ -140,17 +140,23 @@ public class ProcessDocTest extends MainMethod {
         documentObject.buttonProcess.click();
 
         documentObject.buttonOTPEmail.click();
+        delay(7000);
 
-        if (!documentObject.divGagalKodeOtpSudah.isDisplayed()) {
-//            delay(30000);
-            System.out.println("false");
-            documentObject.buttonProsign.click();
-            documentObject.buttonSayaYakin.click();
-            delay(7000);
-        } else {
+        boolean modalButtonTutup = documentObject.buttonModalGagalOTP.isDisplayed();
+
+        System.out.println(modalButtonTutup);
+        if (modalButtonTutup) {
+            assertTrue(documentObject.buttonModalGagalOTP.isDisplayed());
+            delay(5000);
             documentObject.buttonModalGagalOTP.click();
             System.out.println("true");
-
+        } else {
+            System.out.println("false");
+            delay(30000);
+            documentObject.buttonProsign.click();
+            delay(2000);
+            documentObject.buttonSayaYakin.click();
+            delay(7000);
         }
     }
 }

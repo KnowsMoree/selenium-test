@@ -3,6 +3,7 @@ package com.qa.tandatanganku.main;
 import com.qa.tandatanganku.object.LoginPage;
 import com.qa.tandatanganku.object.DocumentObject;
 
+import com.qa.tandatanganku.object.RegisterObject;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,9 +16,12 @@ import java.time.Duration;
 
 public class MainMethod {
     public WebDriver driver;
+
     public LoginPage loginPage;
 
     public DocumentObject documentObject;
+
+    public RegisterObject registerObject;
 
     public Actions act;
 
@@ -36,6 +40,7 @@ public class MainMethod {
 
         act = new Actions(driver);
         loginPage = new LoginPage(driver);
+        registerObject = new RegisterObject(driver);
         documentObject = new DocumentObject(driver);
     }
 
