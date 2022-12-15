@@ -66,6 +66,76 @@ public class RegisterObject {
     @FindBy(xpath = "//*[text() = 'Informasi Akun']")
     public WebElement h3InformasiAkun;
 
+    @FindBy(xpath = "//*[@id='username']")
+    public WebElement inputUsername;
+
+    @FindBy(xpath = "//*[@id='password']")
+    public WebElement inputPassword;
+
+    @FindBy(xpath = "//*[@id='password2']")
+    public WebElement inputPassword2;
+
+    @FindBy(xpath = "//*[@id='email']")
+    public WebElement inputEmail;
+
+    @FindBy(xpath = "//*[@id='handphone']")
+    public WebElement inputHandphone;
+
+    @FindBy(xpath = "//button[@onclick='step3()']")
+    public WebElement buttonNext2;
+
+
+    @FindBy(xpath = "//*[@id='e_username']")
+    public WebElement textUsername;
+
+    @FindBy(xpath = "/html/body/div[11]/form/div/div[4]/div[1]/div/div[2]/i")
+    public WebElement iUsernameAlreadyUsedCreate;
+
+    @FindBy(xpath = "//*[text() = 'Password terlalu pendek, min 8 character']")
+    public WebElement spanPasswordTerlaluPendekMin;
+
+    @FindBy(xpath = "//*[text() = 'Password harus mengandung minimal 1 Simbol/Karakter Spesial']")
+    public WebElement minSymbol;
+
+    @FindBy(xpath = "//*[text() = 'Strong password']")
+    public WebElement strongPass;
+
+    @FindBy(xpath = "//span[@class='pass-text']")
+    public WebElement spanPassword2;
+
+    @FindBy(xpath = "//*[@id='e_password2']")
+    public WebElement passNotSame;
+
+    @FindBy(xpath = "//*[text() = 'Email sudah terdaftar gunakan email lain']")
+    public WebElement emailTaken;
+
+    @FindBy(xpath = "//*[@id='e_email']")
+    public WebElement divEmail2;
+
+    @FindBy(xpath = "//*[text() = 'Invalid Email Address']")
+    public WebElement invalidEmail;
+
+    @FindBy(xpath = "//*[text() = 'No HP sudah terdaftar gunakan nomor lain']")
+    public WebElement numberTaken;
+
+    @FindBy(xpath = "//*[text() = 'Format nomor salah']")
+    public WebElement falseNumberFormat;
+
+    @FindBy(xpath = "//*[text() = 'Nomor HP Minimal 8 digit']")
+    public WebElement numberLess8Digit;
+
+    @FindBy(xpath = "//*[text() = 'Foto dan Tandatangan']")
+    public WebElement fotoDanTandatangan;
+
+    @FindBy(xpath = "//input[@id='imgektp'][@type='file']")
+    public WebElement inputImgektp;
+
+    @FindBy(xpath = "//*[@id='cam']")
+    public WebElement inputCam;
+
+    @FindBy(xpath = "//input[contains(@id, 'imgektp')]")
+    public WebElement inputImgektp2;
+
     public RegisterObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
