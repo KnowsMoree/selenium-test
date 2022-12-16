@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
 import static org.testng.Assert.*;
 
 public class RegisterTest extends MainMethod {
@@ -445,7 +448,7 @@ public class RegisterTest extends MainMethod {
     }
 
     @Test
-    public void vInputKTP() throws InterruptedException {
+    public void vInputKTP() throws InterruptedException, AWTException {
         registerObject.linkCreateAccount.click();
 
         registerObject.inputIdcard.sendKeys("3275025302090003");
@@ -470,9 +473,14 @@ public class RegisterTest extends MainMethod {
         WebElement inputKTP = driver.findElement(By.xpath("//input[contains(@id, 'imgektp')]"));
 
         registerObject.spanPlihFileFoto.click();
+        delay(1000);
+
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_ESCAPE);
+        robot.keyRelease(KeyEvent.VK_ESCAPE);
 
         inputKTP.sendKeys("C:\\Users\\dignitas\\Downloads\\npwp_20221101055126 (1).jpg");
 
-        delay(20000);
+        delay(5000);
     }
 }
