@@ -8,7 +8,7 @@ import static org.testng.Assert.*;
 
 public class SendDocTest extends MainMethod {
     @Test
-    public void sendDoc() {
+    public void aSendDoc() {
         loginPage.inputUsername.sendKeys("ditest6@tandatanganku.com" + Keys.ENTER);
         loginPage.inputPassword.sendKeys("Coba1234" + Keys.ENTER);
 
