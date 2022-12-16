@@ -136,6 +136,9 @@ public class RegisterObject {
     @FindBy(xpath = "//input[contains(@id, 'imgektp')]")
     public WebElement inputImgektp2;
 
+    @FindBy(xpath = "//span[.//*[@id='imgektp']]")
+    public WebElement spanPlihFileFoto;
+
     public RegisterObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

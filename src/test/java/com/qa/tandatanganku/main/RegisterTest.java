@@ -467,8 +467,10 @@ public class RegisterTest extends MainMethod {
         delay(3000);
 
         registerObject.buttonNext2.click();
-
         WebElement inputKTP = driver.findElement(By.xpath("//input[contains(@id, 'imgektp')]"));
+
+        registerObject.spanPlihFileFoto.click();
+
         inputKTP.sendKeys("C:\\Users\\dignitas\\Downloads\\npwp_20221101055126 (1).jpg");
 
         delay(20000);
