@@ -356,7 +356,7 @@ public class RegisterTest extends MainMethod {
     }
 
     @Test
-    public void rNumberTaken() throws InterruptedException{
+    public void rNumberTaken() throws InterruptedException {
         registerObject.linkCreateAccount.click();
 
         registerObject.inputIdcard.sendKeys("3275025302090003");
@@ -370,12 +370,9 @@ public class RegisterTest extends MainMethod {
 
         registerObject.buttonNext.click();
 
-        registerObject.inputUsername.sendKeys("mamang");
-        registerObject.inputPassword.sendKeys("Mamang123!");
-        registerObject.inputPassword2.sendKeys("Mamang123!");
-        registerObject.inputEmail.sendKeys("amang78@spambox.xyz");
-        registerObject.inputHandphone.sendKeys("87804070516");
-        delay(2900);
+        // phone number spill in this section
+
+        delay(5000);
 
         assertTrue(registerObject.numberTaken.isDisplayed());
     }
@@ -439,12 +436,12 @@ public class RegisterTest extends MainMethod {
         registerObject.inputPassword.sendKeys("Mamang123!");
         registerObject.inputPassword2.sendKeys("Mamang123!");
         registerObject.inputEmail.sendKeys("amang78@spambox.xyz");
-        registerObject.inputHandphone.sendKeys("894381212");
+        registerObject.inputHandphone.sendKeys("894381216");
 
-        registerObject.buttonNext2.click();
-        delay(3000);
+        registerObject.buttonNext3.click();
+        delay(5000);
 
-        assertTrue(registerObject.fotoDanTandatangan.isDisplayed());
+        assertTrue(registerObject.fotoDanTandatanganTitle.isDisplayed());
     }
 
     @Test

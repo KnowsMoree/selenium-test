@@ -42,7 +42,7 @@ public class RegisterObject {
     @FindBy(xpath = "//*[text() = 'Format NIK Salah']")
     public WebElement nikFormatFalse;
 
-    @FindBy(xpath = "//*[text() = 'Harus 16 Digit.']")
+    @FindBy(xpath = "//div[@id = 'e_idcard' and (text() = 'Harus 16 Digit.' or . = 'Harus 16 Digit.')]")
     public WebElement nikFormat16Digit;
 
     @FindBy(xpath = "//input[@id='name'][contains(@class,'form-control input-md is-invalid')]")
@@ -83,8 +83,7 @@ public class RegisterObject {
 
     @FindBy(xpath = "//button[@onclick='step3()']")
     public WebElement buttonNext2;
-
-
+    
     @FindBy(xpath = "//*[@id='e_username']")
     public WebElement textUsername;
 
@@ -115,7 +114,7 @@ public class RegisterObject {
     @FindBy(xpath = "//*[text() = 'Invalid Email Address']")
     public WebElement invalidEmail;
 
-    @FindBy(xpath = "//*[text() = 'No HP sudah terdaftar gunakan nomor lain']")
+    @FindBy(xpath = "//div[@id = 'e_handphone' and (text() = 'No HP sudah terdaftar gunakan nomor lain' or . = 'No HP sudah terdaftar gunakan nomor lain')]")
     public WebElement numberTaken;
 
     @FindBy(xpath = "//*[text() = 'Format nomor salah']")
@@ -124,8 +123,8 @@ public class RegisterObject {
     @FindBy(xpath = "//*[text() = 'Nomor HP Minimal 8 digit']")
     public WebElement numberLess8Digit;
 
-    @FindBy(xpath = "//*[text() = 'Foto dan Tandatangan']")
-    public WebElement fotoDanTandatangan;
+    @FindBy(xpath = "//h3[(text() = 'Foto dan Tandatangan' or . = 'Foto dan Tandatangan')]")
+    public WebElement fotoDanTandatanganTitle;
 
     @FindBy(xpath = "//input[@id='imgektp'][@type='file']")
     public WebElement inputImgektp;
@@ -138,6 +137,9 @@ public class RegisterObject {
 
     @FindBy(xpath = "//span[.//*[@id='imgektp']]")
     public WebElement spanPlihFileFoto;
+
+    @FindBy(xpath = "/html/body/div[11]/form/div/div[4]/div[6]/button[2]")
+    public WebElement buttonNext3;
 
     public RegisterObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
