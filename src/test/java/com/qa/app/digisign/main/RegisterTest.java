@@ -1,4 +1,4 @@
-package com.qa.tandatanganku.main;
+package com.qa.app.digisign.main;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertTrue;
 
-public class RegisterTest extends MainMethod {
+public class RegisterTest extends MainDigisignMethod {
     @Test
     public void aRegisterPage() throws InterruptedException {
         registerObject.linkCreateAccount.click();
